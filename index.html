@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>pohavat</title>
+    <link rel="stylesheet" property="stylesheet" href="builds/css/all.min.css" type="text/css"/>
+</head>
+<body>
+
+<!--ALL!-->
+<div class="all">
+
+    <!--header!-->
+    <header>
+        <div class="header__container clearfix">
+            <div class="col-xs-7"></div>
+            <div class="col-xs-5">
+                <div class="header__menu">
+                    <ul class="header__menu--list">
+                        <li class="header__menu--child">
+                            <div id="js-sites" class="dropdown">
+                                <a href="javascript:;" class="dropdown__link" data-dropdown>Сайты</a>
+                                <div class="dropdown__menu">
+                                    DropDown content 0
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__menu--child">
+                            <div id="js-filters" class="dropdown">
+                                <a href="javascript:;" class="dropdown__link" data-dropdown>Фильтры</a>
+                                <div class="dropdown__menu">
+                                    <!--filter!-->
+                                    <div class="filter">
+                                        <form>
+                                            <div class="form__row">
+                                                <select>
+                                                    <option>Категория</option>
+                                                    <option>Категория 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="form__row">
+                                                <select>
+                                                    <option>Подкатегория</option>
+                                                    <option>Подкатегория 2</option>
+                                                </select>
+                                            </div>
+                                            <div class="form__section">
+                                                <div class="form__row">
+                                                    <div class="filter__title time">Время</div>
+                                                    <div class="filter__group">
+                                                        <div class="input__row">
+                                                            <input id="filter-1-1" type="checkbox">
+                                                            <label for="filter-1-1">менее 5 мин.</label>
+                                                        </div>
+                                                        <div class="input__row">
+                                                            <input id="filter-1-2" type="checkbox">
+                                                            <label for="filter-1-2">5-10 мин.</label>
+                                                        </div>
+                                                        <div class="input__row">
+                                                            <input id="filter-1-3" type="checkbox">
+                                                            <label for="filter-1-3">5+ мин.</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form__row">
+                                                    <div class="filter__title complexity">Сложность</div>
+                                                    <div class="filter__group">
+                                                        <div class="input__row">
+                                                            <input id="filter-2-1" type="checkbox">
+                                                            <label for="filter-2-1">легко</label>
+                                                        </div>
+                                                        <div class="input__row">
+                                                            <input id="filter-2-2" type="checkbox">
+                                                            <label for="filter-2-2">средне</label>
+                                                        </div>
+                                                        <div class="input__row">
+                                                            <input id="filter-2-3" type="checkbox">
+                                                            <label for="filter-2-3">тяжело</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form__row">
+                                                    <div class="filter__title feature">Особенность</div>
+                                                    <div class="filter__group">
+                                                        <div class="input__row">
+                                                            <input id="filter-3-1" type="checkbox">
+                                                            <label for="filter-3-1">вегетерианское меню</label>
+                                                        </div>
+                                                        <div class="input__row">
+                                                            <input id="filter-3-2" type="checkbox">
+                                                            <label for="filter-3-2">постное меню</label>
+                                                        </div>
+                                                        <div class="input__row">
+                                                            <input id="filter-3-3" type="checkbox">
+                                                            <label for="filter-3-3">детское меню</label>
+                                                        </div>
+                                                        <div class="input__row">
+                                                            <input id="filter-3-4" type="checkbox">
+                                                            <label for="filter-3-4">диабетическое меню</label>
+                                                        </div>
+                                                        <div class="input__row">
+                                                            <input id="filter-3-5" type="checkbox">
+                                                            <label for="filter-3-5">здоровое питание</label>
+                                                        </div>
+                                                        <div class="input__row">
+                                                            <input id="filter-3-6" type="checkbox">
+                                                            <label for="filter-3-6">диетическое меню</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <!--filter!-->
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__menu--child">
+                            <div id="js-ingredients" class="dropdown">
+                                <a href="javascript:;" class="dropdown__link" data-dropdown>Ингредиенты</a>
+                                <div class="dropdown__menu">
+                                    DropDown content 2
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__menu--child">
+                            <button type="button" class="button">Войти</button>
+                            <a style="display: none;" href="javascript:;" class="user__link">н</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header!-->
+
+    <!--main!-->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__logo">
+                <a href="javascript:;"><img src="images/logo.png" width="425" height="89" alt="pohavat" title="pohavat"></a>
+            </div>
+            <!--search!-->
+            <div class="main__search">
+                <form name="js-search">
+                    <div class="main__search--row">
+                        <input type="text" class="main__search--input">
+                        <button type="submit" class="main__search--submit"></button>
+                    </div>
+                    <div class="search__sub">
+                        <ul class="search__sub--list">
+                            <li class="search__sub--child"><a href="javascript:;" class="search__sub--link">Картофель</a></li>
+                            <li class="search__sub--child"><a href="javascript:;" class="search__sub--link">Кардамон</a></li>
+                            <li class="search__sub--child"><a href="javascript:;" class="search__sub--link">Карри</a></li>
+                        </ul>
+                    </div>
+                    <div class="main__search--desc">
+                        <p>Введите ингредиент и выберите из списка, либо название блюда. Например, <span>картофель</span></p>
+                    </div>
+                </form>
+            </div>
+            <!--search!-->
+
+            <!--posts!-->
+            <div class="main__posts">
+                <div class="post__item">
+                    <div class="post__head clearfix">
+                        <div class="col-xs-6">
+                            <div class="post__title news">Новости</div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="post__date">20.05.2016</div>
+                        </div>
+                    </div>
+                    <div class="post__body clearfix">
+                        <div class="col-xs-9">
+                            <a href="javascript:;" class="post__headline">Сегодня состоялся релиз сервиса «Чё pohavat?». Ждём от всех посетителей отзывы!
+                                Сегодня состоялся релиз сервиса «Чё pohavat?». Ждём от всех посетителей отзывы!
+                            </a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="javascript:;" class="post__read">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__item">
+                    <div class="post__head clearfix">
+                        <div class="col-xs-6">
+                            <div class="post__title news">Новости</div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="post__date">20.05.2016</div>
+                        </div>
+                    </div>
+                    <div class="post__body clearfix">
+                        <div class="col-xs-9">
+                            <a href="javascript:;" class="post__headline">Сегодня состоялся релиз сервиса «Чё pohavat?». Ждём от всех посетителей отзывы!</a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="javascript:;" class="post__read">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--posts!-->
+        </div>
+    </div>
+    <!--main!-->
+    
+    <div id="js-footer"></div>
+
+</div>
+<!--ALL!-->
+
+<!--footer!-->
+<footer>
+    <div class="footer__container clearfix">
+        <div class="col-xs-7">
+            <div class="social">
+                <ul class="social--list">
+                    <li class="social--child">
+                        <div class="social--title">Мы в соц. сетях:</div>
+                    </li>
+                    <li class="social--child">
+                        <a href="javascript:;" class="social--link" target="_blank">VK</a>
+                    </li>
+                    <li class="social--child">
+                        <a href="javascript:;" class="social--link" target="_blank">Facebook</a>
+                    </li>
+                    <li class="social--child">
+                        <a href="javascript:;" class="social--link" target="_blank"> Google+</a>
+                    </li>
+                    <li class="social--child">
+                        <a href="javascript:;" class="social--link" target="_blank">Twitter</a>
+                    </li>
+                    <li class="social--child">
+                        <a href="javascript:;" class="social--link" target="_blank">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-5">
+            <div class="footer__menu">
+                <ul class="footer__menu--list">
+                    <li class="footer__menu--child">
+                        <a href="javascript:;" class="footer__menu--link">О нас</a>
+                    </li>
+                    <li class="footer__menu--child">
+                        <a href="javascript:;" class="footer__menu--link">Стать партнёром</a>
+                    </li>
+                    <li class="footer__menu--child">
+                        <a href="javascript:;" class="footer__menu--link">Реклама</a>
+                    </li>
+                    <li class="footer__menu--child">
+                        <a href="javascript:;" class="footer__menu--link">Обратная связь</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer!-->
+
+<script async src="builds/js/all.min.js"></script>
+
+</body>
+</html>

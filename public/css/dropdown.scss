@@ -1,0 +1,22 @@
+.dropdown {
+  position: relative;
+  &.active {
+    .dropdown__menu {
+      display: block;
+    }
+  }
+}
+.dropdown__link {
+
+}
+.dropdown__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  min-width: 16rem;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #dedede;
+}
