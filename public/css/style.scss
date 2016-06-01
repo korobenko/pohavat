@@ -149,6 +149,57 @@ ul {
     opacity: 0.75;
   }
 }
+.add__favorite {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  @include sprite('sprite.png', 0, -28px);
+  &.active {
+    @include sprite('sprite.png', -24px, -28px);
+  }
+}
+.letter__icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: $primary-color;
+  text-align: center;
+  font-style: normal;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+}
+.food__link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  span {
+    display: inline-block;
+    vertical-align: middle;
+    .letter__icon {
+      margin-right: 6px;
+    }
+  }
+}
+.text__label {
+  position: relative;
+  padding: 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  background: #edd857;
+}
 /*---------Customs---------*/
 
 /*---------Forms---------*/
@@ -296,18 +347,54 @@ select::-ms-expand{
   }
 
 }
-
-
-
 /*---------Forms---------*/
 
 /*-----------Header-----------*/
-header {}
+header {
+  .main__search {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5625;
+  }
+  .main__search--input,
+  .search__sub--link {
+    padding: 15px 70px 15px 10px;
+  }
+  .search__sub {
+    top: 50px;
+  }
+}
 .header__container {
   padding: 20px 15px;
+  font-size: 0;
+  [class^=col-] {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.header__row {
+  font-size: 0;
+  .main__logo,
+  .main__search {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .main__logo {
+    width: 30%;
+    padding-right: 20px;
+    img {
+      display: block;
+    }
+  }
+  .main__search {
+    width: 70%;
+  }
 }
 .header__menu {
   float: right;
+  font-size: 1rem;
+  line-height: 1.5625;
 }
 .header__menu--list {
   list-style-type: none;
@@ -338,11 +425,14 @@ header {}
     text-decoration: none;
   }
 }
+.header__inside {
+  border-bottom: 1px solid $border-color;
+}
 /*-----------Header-----------*/
 
 /*-----------Home-----------*/
 .main {
-  padding: 5% 0 0;
+  padding: 5% 0 30px;
 }
 .main__container {
   position: relative;
@@ -496,6 +586,116 @@ header {}
 }
 /*-----------Home-----------*/
 
+/*-----------Catalog-----------*/
+.page__inside {
+  padding: 0 0 30px;
+}
+.result__filters {
+  position: relative;
+  border-bottom: 1px solid $border-color;
+}
+.catalog {
+  padding: 10px 0;
+}
+.catalog__item {
+  position: relative;
+  padding: 20px 0 20px 100px;
+  min-height: 80px;
+  font-size: 0;
+}
+.catalog__item--image,
+.catalog__item--content {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+.catalog__item--image {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 80px;
+}
+.catalog__item--content {
+  font-size: 1rem;
+  line-height: 1.5625;
+}
+.catalog__item--headline {
+  font-size: 1.125rem;
+}
+.catalog__item--links {
+  padding: 5px 0 0;
+  .food__link {
+    margin-right: 6px;
+  }
+}
+.catalog__item--filter {
+  padding: 10px 0 0;
+  .filter__title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    font-size: 1rem;
+    &:before {
+      top: -2px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.catalog__item--desc {
+  padding: 10px 0 0;
+  span {
+    color: $grey-color;
+  }
+}
+.pagination {
+  padding: 10px 0 0;
+  text-align: center;
+  color: $grey-color;
+}
+.pagination__list {
+  list-style-type: none;
+}
+.pagination__child {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.pagination__child--prev {
+  margin-right: 16px;
+}
+.pagination__child--next {
+  margin-left: 16px;
+}
+.pagination__link {
+  text-decoration: none;
+  color: $grey-color;
+  &:hover {
+    color: $grey-color;
+  }
+}
+.pagination__link--disabled {
+  cursor: default;
+  opacity: 0.5;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.pagination__link--active {
+  color: $style-color;
+  text-decoration: underline;
+  &:hover {
+    color: $style-color;
+  }
+}
+
+/*-----------Catalog-----------*/
+
 /*-----------Article-----------*/
 .article {
   table {
@@ -545,10 +745,9 @@ footer {
     margin-right: 0;
   }
 }
-.footer__menu--link {
-
-}
 /*-----------Footer-----------*/
+
+
 
 /*-----------Media-----------*/
 @media (max-width: 1365px) {

@@ -27,12 +27,17 @@
         }
     }
 
+    function toggle_fav(self) {
+        self.toggleClass('active');
+    }
+
     jQuery(function() {
 
         jQuery(document).on('scroll', throttle(function() {
             
         }, 300));
 
+        //search
         jQuery('.main__search--input').keyup(function () {
             var value = jQuery(this).val();
 
@@ -42,5 +47,21 @@
                 jQuery('.search__sub').hide();
             }
         });
+
+        //add or remove from fav
+        jQuery('html').on('click', '.add__favorite', function() {
+            toggle_fav( jQuery(this) );
+        });
+
+        //popup
+        jQuery('#login').on('show.popup', function() {
+            console.log('popup is show');
+        });
+        jQuery('#login').on('hide.popup', function() {
+            console.log('popup is hide');
+        });
+
+        //Popup.show('#login');
+        //Popup.hide('#login');
 
     });

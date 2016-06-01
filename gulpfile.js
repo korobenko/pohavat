@@ -9,12 +9,14 @@ var sourcemaps = require('gulp-sourcemaps');
 var css = [
     'public/css/grid.css',
     'public/css/dropdown.css',
+    'public/css/popup.css',
     'public/css/style.css'
 ];
 
 var js = [
     'public/js/jquery.js',
     'public/js/dropdown.js',
+    'public/js/popup.js',
     'public/js/footer.js',
     'public/js/script.js'
 ];

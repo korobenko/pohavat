@@ -125,7 +125,7 @@
                             </div>
                         </li>
                         <li class="header__menu--child">
-                            <button type="button" class="button">Войти</button>
+                            <button type="button" data-popup data-target="#login" class="button">Войти</button>
                             <a style="display: none;" href="javascript:;" class="user__link">н</a>
                         </li>
                     </ul>
@@ -139,7 +139,7 @@
     <div class="main">
         <div class="main__container">
             <div class="main__logo">
-                <a href="javascript:;"><img src="images/logo.png" width="425" height="89" alt="pohavat" title="pohavat"></a>
+                <a href="index-1.html"><img src="images/logo.png" width="425" height="89" alt="pohavat" title="pohavat"></a>
             </div>
             <!--search!-->
             <div class="main__search">
@@ -261,6 +261,17 @@
     </div>
 </footer>
 <!--footer!-->
+
+<div id="login" class="popup-container">
+    <div class="popup">
+        <div class="popup-content">
+            <div class="popup-title">Popup Headline</div>
+            <a href="javascript:;" data-popup-close class="popup-close">close</a>
+            <p><br></p>
+            <button type="button" onclick="Popup.hide('#login')" class="button">Close</button>
+        </div>
+    </div>
+</div>
 
 <script async src="builds/js/all.min.js"></script>
 
